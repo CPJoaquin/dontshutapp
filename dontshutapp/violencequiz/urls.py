@@ -8,6 +8,6 @@ router.register(r"question", views.QuestionViewSet)
 router.register(r"help", views.HelpViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('help/amount', views.help_count)
+    path('', include(router.urls)),#ModelViewSet
+    path('help/amount', views.help_count)#CustomApi
 ]
